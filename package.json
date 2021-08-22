@@ -1,12 +1,13 @@
 {
-  "name": "test_guojian_log",
-  "version": "1.0.4",
+  "name": "nestjs-log-module",
+  "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
   "files": [
     "dist/**"
   ],
   "scripts": {
+    "dev": "tsc --watch",
     "build": "rm -rf ./dist && tsc && npm run build:index",
     "build:index": "rm -rf ./index.js ./index.d.ts && tsc -d --skipLibCheck ./index.ts"
   },
@@ -16,7 +17,8 @@
   "dependencies": {
     "@types/node": "^16.4.0",
     "winston": "^3.3.3",
-    "rxjs": "^7.2.0"
+    "rxjs": "^7.2.0",
+    "morgan": "^1.10.0"
   },
   "peerDependencies": {
     "@nestjs/common": "^8.0.0",
@@ -25,6 +27,7 @@
   "devDependencies": {
     "@nestjs/platform-express": "^8.0.0",
     "@nestjs/common": "^8.0.0",
+    "@types/morgan": "^1.9.3",
     "reflect-metadata": "^0.1.13",
     "@nestjs/core": "^8.0.0",
     "rimraf": "^3.0.2",
