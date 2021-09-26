@@ -1,6 +1,6 @@
 {
-  "name": "nestjs-log-module",
-  "version": "1.0.1",
+  "name": "@guojian/nestjs-log-module",
+  "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
   "files": [
